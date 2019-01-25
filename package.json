@@ -1,0 +1,19 @@
+{
+  "name": "to-dollars",
+  "version": "0.1.0",
+  "description": "A JavaScript utility function from formatting numbers as dollars",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Goudla/to-dollars.git"
+  },
+  "author": "Douglas Bamber",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Goudla/to-dollars/issues"
+  },
+  "homepage": "https://github.com/Goudla/to-dollars#readme"
+}
