@@ -17,7 +17,7 @@
 
     var a = value.toFixed(2).split('');
     var l = a.length;
-    for (var i = l - 6; i >= 3 ; i -= 3) {
+    for (var i = l - 6; i > 0 ; i -= 3) {
       a.splice(i, 0, ',');
     }
 
