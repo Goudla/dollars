@@ -13,14 +13,16 @@
    * @return {string}       The value formatted as currency
    */
   return function(value) {
-    if (!value) return;
+    var number = Number(value);
+    if (isNaN(number)) return;
 
-    var a = value.toFixed(2).split('');
-    var l = a.length;
-    for (var i = l - 6; i > 0 ; i -= 3) {
-      a.splice(i, 0, ',');
+    var roundedNumber = Math.ceil(number*100)/100;
+    var array = roundedNumber.toFixed(2).split('');
+    var length = array.length;
+    for (var i = length - 6; i > 0 ; i -= 3) {
+      array.splice(i, 0, ',');
     }
 
-    return '$' + a.join('');
+    return '$' + array.join('');
   };
 }));
