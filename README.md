@@ -1,5 +1,5 @@
 # to-dollars
-A JavaScript utility function from formatting numbers as dollars
+A JavaScript utility function for formatting numbers as dollars
 
 ### Installation
 
