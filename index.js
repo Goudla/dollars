@@ -15,12 +15,22 @@
   return function(value) {
     var number = Number(value);
     if (isNaN(number)) return;
+    var isNegative = number < 0;
 
     var roundedNumber = Math.ceil(number*100)/100;
     var array = roundedNumber.toFixed(2).split('');
+    // Remove negative symbol for formatting
+    if (isNegative) {
+      array.shift();
+    }
+
     var length = array.length;
     for (var i = length - 6; i > 0 ; i -= 3) {
       array.splice(i, 0, ',');
+    }
+
+    if (isNegative) {
+      return '($' + array.join('') + ')';
     }
 
     return '$' + array.join('');
