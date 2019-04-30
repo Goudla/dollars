@@ -10,11 +10,11 @@ In a browser:
 
 Using [npm](https://www.npmjs.com/):
 
-    $ npm install --save javascript-array-search
+    $ npm install --save to-dollars
 
 Or [yarn](https://yarnpkg.com/):
 
-    $ yarn add javascript-array-search
+    $ yarn add to-dollars
 
 In Node.js:
 ```js
